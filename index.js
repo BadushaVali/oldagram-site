@@ -34,7 +34,7 @@ let html = "";
 
 for (let i = 0; i < posts.length; i++) {
   html += `
- 
+        <div class="card">
         <header>
             <img id="avatar" src="${posts[i].avatar}" alt="vangogh pic" />
             <div>
@@ -56,6 +56,7 @@ for (let i = 0; i < posts.length; i++) {
                 ${posts[i].username}<span id="comment">${posts[i].comment}</span>
             </p>
         </main>
+        </div>
 `;
 }
 rootEl.innerHTML += html;
